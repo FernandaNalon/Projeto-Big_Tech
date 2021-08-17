@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FALTA ">
+    <meta name="keywords" content="Loja, Artigos, informática">
+    <meta name="author" content="Guilherme Farias">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="refresh" content="60">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/centralized-network.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/servicos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/810d664cda.js" crossorigin="anonymous"></script>
+    <!-- IMPORTANDO JAVASCRIPT DO MODAL -->
+    <script rel="javascript" src="JS/modal.js"></script>
+    <title>Loja de informática - Big Tech </title>
+
+</head>
+
+<body>
+    <!-- Barra de pesquisa 
+        <form action="">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua pesquisa">
+            <button> <i class="fas fa-search"></i> </button>
+        </form>-->
+
+    <nav class="menu">
+        <!-- LOGO -->
+        <a href="index.html"><img src="Imagens/logo-branca.png"></a>
+        <!-- Menu de navegação-->
+        <ul>
+            <!-- UL lista nao ordenada -->
+            <!-- li item da lista -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a> </li>
+            <li><a href="servicos.html" class="active"> Serviços</a></li>
+            <li><a href="#contato" onclick="abrir_modal();">Contato</a></li>
+        </ul>
+
+        <div class="social-icons">
+            <a href="https://fb.me/LojaBigTech" target="blank"> <i class="fab fa-facebook fa-md"></i></a>
+            <a href="https://twitter.com/LojaBigTech" target="blank"> <i class="fab fa-twitter fa-md"></i></a>
+            <a href="https://www.instagram.com/loja_bigtech/" target="blank"> <i class="fab fa-instagram fa-md"></i></a>
+            <a href="https://www.youtube.com/channel/UCyOv6pv0UnP3HOk_GN4H3_A" target="blank"> <i class="fab fa-youtube fa-md"></i></a>
+            <a href="https://www.linkedin.com/in/big-tech" target="blank"> <i class="fab fa-linkedin fa-md"></i></a>
+        </div>
+    </nav>
+
+    <header class="cabecalho">
+        <center>
+            <div class="titulos">
+                <a href="index.html" title="Loja de Informática - Farias"></a>
+                <h1>Serviços</h1>
+                <p>Confira nossos serviços prestados.</p>
+            </div>
+            <form action="">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua pesquisa">
+                <button> <i class="fas fa-search"></i> </button>
+            </form>
+        </center>
+    </header>
+
+    <!--  MODAL - ALERT DO CONTATOS -->
+    <div class="tela_preta" style='display:none;' onclick="sair()"></div>
+    <div class='caixa' style='display:none;'>
+        <a onclick="sair()" style='float:right;cursor:pointer;'></span>&times;</a>
+        <h2><ins>Contate-nos</ins></h2>
+        <hr><br>
+        <p>Ficou interessado em algum de nossos serviços ou possui alguma dúvida? Nos contacte para que possamos te ajudar! </p>
+        <form>
+            <label>Nome Completo</label>
+            <br>
+            <input type="text" placeholder="Ex. Jurandi dos Santos Penna">
+            <br>
+            <label>E-mail</label>
+            <br>
+            <input type="email" placeholder="Ex. email@gmail.com">
+            <br>
+            <label>Telefone/Celular</label>
+            <br>
+            <input type="tel" placeholder="Ex. (DDD) XXXXX-XXXX">
+            <br>
+            <label>Mensagem</label>
+            <textarea placeholder="Escreva aqui uma mensagem..."></textarea>
+            <button class="btn">Enviar mensagem à Big Tech</button>
+        </form>
+    </div>
+    <!-- FIM  MODAL - ALERT DO CONTATOS -->
+
+    <main class="principal">
+
+        <!-- BOTAO FLUTUANTE DO WHATSAPP -->
+        <a href="https://api.whatsapp.com/send?phone=5511978327459&text=Olá, gostaria de fazer um orçamento ou tirar uma dúvida." target="_blank">
+            <img src="Imagens/zap.png" alt='whatsapp' class='botao_whatsapp'>
+        </a>
+
+        <!-- PARTE PRINCIPAL DO SITE -->
+        <h2>Locação de equipamentos</h2>
+        <p>Se sua empresa precisa de equipamentos atualizados e modernos, a nossa solução de locação de equipamentos é ideal. Temos soluções adequadas e personalizadas para seu negócio. </p>
+
+        <article class="produtos">
+            <div></div>
+
+            <figure>
+                <center><img src="Imagens/produto1.png" alt="Desktops" width="70%" height="70%"></center>
+                <figcaption>
+                    <price>R$999.999</price>
+                    <h3>Desktops</h3>
+                </figcaption>
+                <button class="btn">Solicitar Orçamento</button>
+            </figure>
+
+            <figure>
+                <center><img src="Imagens/produto3.png" alt="Desktops" width="70%" height="70%"></center>
+                <figcaption>
+                    <price>R$999.999</price>
+                    <h3>Notebooks</h3>
+                </figcaption>
+                <button class="btn">Solicitar Orçamento</button>
+            </figure>
+            <figure>
+                <center><img id="servidores" src="Imagens/produto2.png" alt="Desktops" width="70%" height="70%"></center>
+                <figcaption>
+                    <price>R$999.999</price>
+                    <h3>Servidores</h3>
+                </figcaption>
+                <button class="btn">Solicitar Orçamento</button>
+            </figure>
+
+            <div></div>
+
+
+
+        </article>
+
+
+        <!-- PARTE DO LADO 
+        <aside class="onde-estamos">
+            <h2>Onde Estamos </h2>
+            <p>Rua Pequetita, 111 - 1º andar - Via Olímpia, São Paulo - SP, 04552-060</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.334593823503!2d-46.68727778502147!3d-23.592330284667522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57467938e36d%3A0x3f95b7ce9ca78b42!2sR.%20Pequetita%2C%20111%20-%20Vila%20Ol%C3%ADmpia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004552-060!5e0!3m2!1sen!2sbr!4v1628773382218!5m2!1sen!2sbr"></iframe>
+            <h2>Contatos</h2>
+            <ul>
+                <li><i class="fas fa-phone"></i> (11) 3443-6362</li>
+                <li><i class="fab fa-whatsapp"></i> (11) 912435-6789</li>
+                <li><i class="fas fa-envelope"></i> contato@proa.org.br</li>
+            </ul>
+        </aside>
+    
+    -->
+    </main>
+    <section class="newsLetter">
+        <h3>NewsLetter</h3>
+        <p>Receba nossas promoções</p>
+        <form action="#" method="post">
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail ">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>&copy 2021 Loja de informática Big Tech. Todos os direitos reservados.
+        </p>
+
+    </footer>
+</body>
+
+</html>

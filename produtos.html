@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FALTA ">
+    <meta name="keywords" content="Loja, Artigos, informática">
+    <meta name="author" content="Guilherme Farias">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="refresh" content="60">
+    <link rel="shortcut icon" href="Imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/produtos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/810d664cda.js" crossorigin="anonymous"></script>
+
+    <!-- IMPORTANDO JAVASCRIPT DO MODAL -->
+    <script rel="javascript" src="JS/modal.js"></script>
+
+    <title>Loja de informática - Farias</title>
+
+</head>
+
+<body>
+
+    <!-- Barra de pesquisa 
+        <form action="">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua pesquisa">
+            <button> <i class="fas fa-search"></i> </button>
+        </form>
+-->
+
+
+
+
+    <nav class="menu">
+
+
+        <!-- LOGO -->
+        <img src="Imagens/logo-branca.png" width="4%" height="4%" class="" style="float:left;margin-right:30px;">
+
+        <!-- Menu de navegação-->
+        <ul>
+            <!-- UL lista nao ordenada -->
+            <!-- ol ista ordenada -->
+            <!-- li item da lista -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html" class="active">Produtos</a> </li>
+            <li><a href="servicos.html"> Serviços</a> </li>
+            <li><a href="#contato" onclick="abrir_modal();">Contato</a> </li>
+        </ul>
+
+
+
+
+
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"> <i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.facebook.com/"> <i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://www.facebook.com/"> <i class="fab fa-instagram fa-md"></i></a>
+            <a href="https://www.facebook.com/"> <i class="fab fa-google fa-md"></i></a>
+            <a href="https://www.facebook.com/"> <i class="fab fa-youtube fa-lg"></i></a>
+            <a href="https://www.facebook.com/"> <i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="cabecalho">
+
+        <center>
+            <div class="titulos">
+                <a href="index.html" title="Loja de Informática - Farias"></a>
+                <h1>Produtos</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi veniam recu</p>
+            </div>
+            <form action="">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua pesquisa">
+                <button> <i class="fas fa-search"></i> </button>
+            </form>
+        </center>
+
+    </header>
+
+
+
+
+
+
+    <!--  MODAL - ALERT DO CONTATOS -->
+
+    <div class="tela_preta" style='display:none;'></div>
+
+    <div class='caixa' style='display:none;'>
+        <a onclick="sair()" style='float:right;cursor:pointer;'></span>&times;</a>
+        <h2>Contato</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor soluta neque unde</p>
+        <form>
+            <label>Nome</label>
+            <br>
+            <input type="text" placeholder="Seu nome...">
+            <br>
+            <label>E-mail</label>
+            <br>
+            <input type="email" placeholder="email@gmail.com">
+            <br>
+            <label>Telefone</label>
+            <br>
+            <input type="tel" placeholder="(11)97832-7459">
+            <br>
+
+            <button class="btn">Solicitar Serviço</button>
+
+        </form>
+    </div>
+
+
+
+    <!-- FIM  MODAL - ALERT DO CONTATOS -->
+
+
+
+
+
+
+
+
+
+    <main class="principal">
+        <!-- PARTE PRINCIPAL DO SITE -->
+        <article class="sobre">
+            <h2>Sobre Nós</h2>
+            <img src="Imagens/loja de informatica.jpeg" alt="Foto da loja de informatica">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minima, voluptas suscipit maiores tempora, dignissimos earum dolorum modi qui dolorem odit eveniet ut perferendis hic doloribus facilis. Deserunt, dolorum natus! Expedita perspiciatis
+                maxime dolore exercitationem nisi sequi sapiente quisquam labore mollitia accusamus rem, dolores amet, animi necessitatibus aspernatur minus nam quia ratione ducimus itaque commodi facilis perferendis debitis! Ducimus, perspiciatis? Eveniet
+                nostrum sit corrupti sed cupiditate numquam odit culpa molestiae commodi, id dolorem at est nam rem qui eius recusandae necessitatibus! Unde temporibus rerum, assumenda illum voluptate natus quasi non.</p>
+        </article>
+        <aside class="onde-estamos">
+            <h2>Onde Estamos </h2>
+            <p>Rua Pequetita, 111 - 1º andar - Via Olímpia, São Paulo - SP, 04552-060</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.334593823503!2d-46.68727778502147!3d-23.592330284667522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57467938e36d%3A0x3f95b7ce9ca78b42!2sR.%20Pequetita%2C%20111%20-%20Vila%20Ol%C3%ADmpia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004552-060!5e0!3m2!1sen!2sbr!4v1628773382218!5m2!1sen!2sbr"></iframe>
+            <h2>Contatos</h2>
+            <ul>
+                <li><i class="fas fa-phone"></i> (11) 3443-6362</li>
+                <li><i class="fab fa-whatsapp"></i> (11) 912435-6789</li>
+                <li><i class="fas fa-envelope"></i> contato@proa.org.br</li>
+            </ul>
+        </aside>
+    </main>
+    <section class="newsLetter">
+        <h3>NewsLetter</h3>
+        <p>Receba nossas promoções</p>
+        <form action="#" method="post">
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail aqui">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+    <footer>
+        <!-- RODAPÉ -->
+        <address class="rodape">
+            <p>&copy 2021 Loja de informática Farias. Todos os direitos reservados. 
+            </p>
+            <p class="rodape2">Desenvolvido por Guilherme Farias. <br>
+            <a href="mailto:gui-oliveira05@live.com"> <abbr title="E-mail">Contate-nos</abbr> </a><br>
+            Endereço: AV. Paulista, 14 <br>
+            Consolação - SP <br></p>
+        </address>
+    </footer>
+</body>
+
+</html>
